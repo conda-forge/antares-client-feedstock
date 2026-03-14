@@ -1,13 +1,13 @@
 {% set name = "antares-client" %}
-{% set version = "1.8.0" %}
+{% set version = "1.10.0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/antares-client-{{ version }}.tar.gz
-  sha256: 673e6ba8e539ef0f3af2bf0f48c2c553c0919a5963d5b6d5cc7698c1f7921d7c
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name | replace('-', '_') }}-{{ version }}.tar.gz
+  sha256: c609cac80d2899949d69a0d779b24479dc47e18b5eecba5882edf3bab947ea56
 
 build:
   entry_points:
